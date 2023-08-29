@@ -1,0 +1,46 @@
+Algo-Jwèt
+{Algo sa se yon jwèt devinèt pou chwazi nomb}
+Varyab nomb_chwazi:Reyèl,
+             Chans.           :Antye
+             Repons          :Chenn 
+
+
+
+Demare
+Afiche (« Byenvini nan jwèt devinèt la ,wap gen posibilite pou chwazi yon nomb si ou jwenn nomb lan ou genyen »);
+Afiche (« ——————————————————-»);
+Afiche(« Ki nomb ou chwazi »);
+Antre(nomb_chwazi);
+
+Non_odinatè=aza(10,15);
+
+Repons <-  « Wi »;
+
+Chans <- 5;
+
+Repete 
+             Si nomb_chwazi = non_odinatè
+                 Afiche (« Ou genyen ,felisitasyon »);
+            Sinon si (nomb_chwazi != non_odinaté) ak ( (nomb_chwazi < non_odinatè) ou (nomb_chwazi > non_odinatè) ) 
+                  Afiche(« Ou pèdi men ou genyen » chans « eseye anko  e nom ou chwazi a pi gran ke nomb lan ou sinon li pi piti »);
+                 Antre(nomb_chwazi);
+
+             Tanke (chans <= 5) 
+                  Afiche(« Ou rete » chans-1 « reantre nomb ou: »);
+                 Antre(nomb_chwazi);
+                 Chans - -;
+             
+             Si(chans = 5)
+                   Afiche (« Ou pèdi »)
+             Fen si
+          Fen tanke
+     Sinon
+               Afiche(« Valè  ou antre pa yon nomb »);
+        Fen si 
+
+Afiche (« Eske  ou vle kontinye »);
+Antre(Repons)
+
+Tanke (Repons = « Wi »);
+
+Fen 
